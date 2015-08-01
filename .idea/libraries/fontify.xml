@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fontify">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Fontify/bin/fontify.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

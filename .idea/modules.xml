@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Fontify/Fontify.iml" filepath="$PROJECT_DIR$/../Fontify/Fontify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/SmartConfigCC3X.iml" filepath="$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/SmartConfigCC3X.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SparkCore.iml" filepath="$PROJECT_DIR$/SparkCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../OpenCV-2.4.9-android-sdk/OpenCV-2.4.9-android-sdk/sdk/java/sdk.iml" filepath="$PROJECT_DIR$/../../../OpenCV-2.4.9-android-sdk/OpenCV-2.4.9-android-sdk/sdk/java/sdk.iml" />
+    </modules>
+  </component>
+</project>

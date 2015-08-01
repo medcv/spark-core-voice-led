@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/bin/dexedLibs/android-support-v4-89fc4219cdce6186ab1a5818d9ea5b3f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/bin/dexedLibs/smartconfiglib-a7586e92daebaadd3e1572064c21949f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/bin/dexedLibs/smartconfiglib-35b30ef630d386f0865c4723a3ff6f73.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../CC3000AndroidApp/SmartConfigCC3X/bin/dexedLibs/android-support-v4-7e26f8b22f7538761883ca34e663ef9b.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

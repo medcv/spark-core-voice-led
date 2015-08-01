@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.spark.core.android"
+    android:installLocation="preferExternal"
+    android:versionCode="4"
+    android:versionName="0.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".app.SparkCoreApp"
+        android:allowBackup="true"
+        android:icon="@drawable/voicelight_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CustomTypefaceGradientActionBar" >
+
+        <!-- Activities -->
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.smartconfig.SmartConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTypefaceGradientActionBar.Overlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.spark.core.android.ui.corelist.CoreListActivity" />
+        </activity>
+        <activity
+            android:name=".ui.smartconfig.NamingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTypefaceGradientActionBar.Overlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SmartConfigActivity" />
+        </activity>
+        <activity
+            android:name=".ui.smartconfig.NoCoresFoundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTypefaceGradientActionBar.Overlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SmartConfigActivity" />
+        </activity>
+        <activity
+            android:name=".ui.corelist.CoreListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.CustomTypefaceGradientActionBar.Overlay.NoUp" />
+
+        <!-- Services -->
+        <service
+            android:name=".cloud.requestservice.SimpleSparkApiService"
+            android:exported="false" />
+        <service
+            android:name=".smartconfig.SmartConfigService"
+            android:exported="false" />
+        <service
+            android:name=".ui.corelist.SimpleVoiceService"
+            android:enabled="true"
+            android:label="Serivce" />
+ >
+
+        <!-- Face OCV -->
+        <activity
+            android:name=".FdActivity"
+            android:label="@string/title_activity_fd"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ImageGallery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FdTraining"
+            android:label="@string/title_activity_fd_training"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FdSearch"
+            android:label="@string/title_activity_fd_search" 
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>
